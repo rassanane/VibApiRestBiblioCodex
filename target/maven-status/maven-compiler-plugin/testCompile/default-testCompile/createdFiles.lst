@@ -1,0 +1,14 @@
+fr/keltou/biblio/service/AuteurServiceTest.class
+fr/keltou/biblio/controller/AuthControllerTest.class
+fr/keltou/biblio/service/LivreServiceTest.class
+fr/keltou/biblio/controller/LivreControllerTest.class
+fr/keltou/biblio/controller/UtilisateurControllerTest.class
+fr/keltou/biblio/controller/ContactControllerTest.class
+fr/keltou/biblio/utils/StringUtilsTest.class
+fr/keltou/biblio/service/UtilisateurServiceTest.class
+fr/keltou/biblio/utils/DateUtilsTest.class
+fr/keltou/biblio/controller/MaisonEditionControllerTest.class
+fr/keltou/biblio/controller/AuteurControllerTest.class
+fr/keltou/biblio/exception/GlobalExceptionHandlerTest.class
+fr/keltou/biblio/service/ContactServiceTest.class
+fr/keltou/biblio/service/MaisonEditionServiceTest.class

@@ -1,0 +1,16 @@
+
+
+Ajout du projet a Eclipse: Maven, importer un projet existant
+
+
+
+Petit mémo pour démarrer côté dev:
+- Prérequis: JDK 17 installé (`java -version`).
+- Démarrer: `cd apirest && mvn spring-boot:run -Dspring-boot.run.profiles=dev`
+- Ou Jar: `java -jar target/biblio-0.0.1-SNAPSHOT.jar --spring.profiles.active=d
+ev`
+- Swagger: http://localhost:8080/swagger-ui.html
+- Health: http://localhost:8080/actuator/health
+
+
+
