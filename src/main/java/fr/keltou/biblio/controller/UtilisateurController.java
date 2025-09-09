@@ -2,16 +2,19 @@ package fr.keltou.biblio.controller;
 
 import fr.keltou.biblio.model.Utilisateur;
 import fr.keltou.biblio.service.UtilisateurService;
+
+import org.hibernate.internal.build.AllowSysOut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/utilisateurs")
-@CrossOrigin(origins = "http://localhost:4200", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE, RequestMethod.OPTIONS})
 public class UtilisateurController {
     private static final Logger log = LoggerFactory.getLogger(UtilisateurController.class);
     private final UtilisateurService service;
@@ -32,4 +35,28 @@ public class UtilisateurController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable("id") Long id) { log.info("DELETE /api/utilisateurs/{}", id); service.delete(id); return ResponseEntity.noContent().build(); }
+
+    // Authentification applicative via formulaire: requiert Basic Auth pour accéder à la route
+    // et vérifie dans la base que (identifiant, motPasse) correspondent à un utilisateur
+    @PostMapping("/auth")
+    public ResponseEntity<?> authenticate(@RequestBody Map<String, String> body) {
+        String identifiant = body.getOrDefault("identifiant", body.get("username"));
+        String motPasse = body.getOrDefault("motPasse", body.get("password"));
+        if (identifiant != null) identifiant = identifiant.trim();
+        log.info("POST /api/utilisateurs/auth pour {}", identifiant);
+
+        if (identifiant == null || identifiant.isBlank() || motPasse == null) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                    .body(Map.of("error", "identifiant et motPasse sont requis"));
+        }
+        
+        Utilisateur utilisateur = service.findByCredentials(identifiant, motPasse);
+        
+        if (utilisateur != null) {
+            return ResponseEntity.ok(utilisateur);
+        }
+                
+        return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
+                .body(Map.of("error", "Identifiant ou mot de passe incorrect"));
+    }
 }

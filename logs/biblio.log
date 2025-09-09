@@ -1,116 +1,69 @@
-2025-09-06 01:21:34.082 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - rid= user= - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h23s174ms).
-2025-09-06 01:21:49.419 INFO  [http-nio-8080-exec-6] f.k.b.config.RequestLoggingFilter - rid=738ce8f3-8ea8-4467-9510-cc9eaae6a3ce user= - OPTIONS /api/auteurs?page=0&size=10 -> status=200 duration=1ms ip=0:0:0:0:0:0:0:1
-2025-09-06 01:21:49.424 INFO  [http-nio-8080-exec-7] f.k.b.controller.AuteurController - rid=e17e91d9-a9e1-483e-8f3c-d522c9557565 user=rachid - GET /api/auteurs
-2025-09-06 01:21:49.443 INFO  [http-nio-8080-exec-7] f.k.b.config.RequestLoggingFilter - rid=e17e91d9-a9e1-483e-8f3c-d522c9557565 user=rachid - GET /api/auteurs?page=0&size=10 -> status=200 duration=20ms ip=0:0:0:0:0:0:0:1
-2025-09-06 09:22:25.711 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - rid= user= - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8h21s477ms).
-2025-09-06 15:07:45.664 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - rid= user= - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h45m19s953ms).
-2025-09-06 15:12:51.886 INFO  [http-nio-8080-exec-9] f.k.b.config.RequestLoggingFilter - rid=dd37e2e4-1ecd-4528-a63a-9bdb7cd93729 user= - OPTIONS /api/auteurs?page=0&size=10 -> status=200 duration=1ms ip=0:0:0:0:0:0:0:1
-2025-09-06 15:12:51.894 INFO  [http-nio-8080-exec-10] f.k.b.controller.AuteurController - rid=8398b7ba-e3b6-44e8-a08f-7101f6df0793 user=rachid - GET /api/auteurs
-2025-09-06 15:12:51.912 WARN  [http-nio-8080-exec-10] com.zaxxer.hikari.pool.PoolBase - rid=8398b7ba-e3b6-44e8-a08f-7101f6df0793 user=rachid - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3a81cf6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2025-09-06 15:12:51.919 WARN  [http-nio-8080-exec-10] com.zaxxer.hikari.pool.PoolBase - rid=8398b7ba-e3b6-44e8-a08f-7101f6df0793 user=rachid - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6d507df8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2025-09-06 15:12:51.931 WARN  [http-nio-8080-exec-10] com.zaxxer.hikari.pool.PoolBase - rid=8398b7ba-e3b6-44e8-a08f-7101f6df0793 user=rachid - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5b92316d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2025-09-06 15:12:51.944 WARN  [http-nio-8080-exec-10] com.zaxxer.hikari.pool.PoolBase - rid=8398b7ba-e3b6-44e8-a08f-7101f6df0793 user=rachid - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@189ec945 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2025-09-06 15:12:51.950 WARN  [http-nio-8080-exec-10] com.zaxxer.hikari.pool.PoolBase - rid=8398b7ba-e3b6-44e8-a08f-7101f6df0793 user=rachid - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4ae30862 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2025-09-06 15:12:51.966 WARN  [http-nio-8080-exec-10] com.zaxxer.hikari.pool.PoolBase - rid=8398b7ba-e3b6-44e8-a08f-7101f6df0793 user=rachid - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@24b2037b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2025-09-06 15:12:51.978 WARN  [http-nio-8080-exec-10] com.zaxxer.hikari.pool.PoolBase - rid=8398b7ba-e3b6-44e8-a08f-7101f6df0793 user=rachid - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6ee157d9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2025-09-06 15:12:51.983 WARN  [http-nio-8080-exec-10] com.zaxxer.hikari.pool.PoolBase - rid=8398b7ba-e3b6-44e8-a08f-7101f6df0793 user=rachid - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5b7fa1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2025-09-06 15:12:51.988 WARN  [http-nio-8080-exec-10] com.zaxxer.hikari.pool.PoolBase - rid=8398b7ba-e3b6-44e8-a08f-7101f6df0793 user=rachid - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@52a9d7d0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2025-09-06 15:12:51.996 WARN  [http-nio-8080-exec-10] com.zaxxer.hikari.pool.PoolBase - rid=8398b7ba-e3b6-44e8-a08f-7101f6df0793 user=rachid - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6634bf25 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2025-09-06 15:12:52.021 INFO  [http-nio-8080-exec-10] f.k.b.config.RequestLoggingFilter - rid=8398b7ba-e3b6-44e8-a08f-7101f6df0793 user=rachid - GET /api/auteurs?page=0&size=10 -> status=200 duration=128ms ip=0:0:0:0:0:0:0:1
-2025-09-06 15:12:55.760 INFO  [http-nio-8080-exec-1] f.k.b.config.RequestLoggingFilter - rid=32b121fb-5626-4bb0-87d1-cfeab3c2bdf1 user= - OPTIONS /api/livres?page=0&size=10 -> status=200 duration=0ms ip=0:0:0:0:0:0:0:1
-2025-09-06 15:12:55.765 INFO  [http-nio-8080-exec-2] f.k.b.controller.LivreController - rid=16e40673-3ba7-4085-b6c1-0161e2939c2f user=rachid - GET /api/livres
-2025-09-06 15:12:55.858 INFO  [http-nio-8080-exec-2] f.k.b.config.RequestLoggingFilter - rid=16e40673-3ba7-4085-b6c1-0161e2939c2f user=rachid - GET /api/livres?page=0&size=10 -> status=200 duration=93ms ip=0:0:0:0:0:0:0:1
-2025-09-06 15:12:56.833 INFO  [http-nio-8080-exec-3] f.k.b.controller.AuteurController - rid=6bf2a4c2-5f07-4595-9517-e2f35dda0ff5 user=rachid - GET /api/auteurs
-2025-09-06 15:12:56.854 INFO  [http-nio-8080-exec-3] f.k.b.config.RequestLoggingFilter - rid=6bf2a4c2-5f07-4595-9517-e2f35dda0ff5 user=rachid - GET /api/auteurs?page=0&size=10 -> status=200 duration=22ms ip=0:0:0:0:0:0:0:1
-2025-09-06 15:15:11.691 INFO  [http-nio-8080-exec-5] f.k.b.config.RequestLoggingFilter - rid=79f870af-b27f-4bba-b48e-22a737ea4fe1 user= - OPTIONS /api/auteurs?page=0&size=10 -> status=200 duration=0ms ip=0:0:0:0:0:0:0:1
-2025-09-06 15:15:11.695 INFO  [http-nio-8080-exec-6] f.k.b.controller.AuteurController - rid=5972084a-a9bc-4cb9-ab27-40f056818dad user=rachid - GET /api/auteurs
-2025-09-06 15:15:11.713 INFO  [http-nio-8080-exec-6] f.k.b.config.RequestLoggingFilter - rid=5972084a-a9bc-4cb9-ab27-40f056818dad user=rachid - GET /api/auteurs?page=0&size=10 -> status=200 duration=19ms ip=0:0:0:0:0:0:0:1
-2025-09-06 15:22:39.147 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - rid= user= - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m23s426ms).
-2025-09-06 15:28:05.002 INFO  [http-nio-8080-exec-8] f.k.b.config.RequestLoggingFilter - rid=0df3542a-1a88-4307-bce1-c27e7a6ddef4 user= - OPTIONS /api/auteurs?page=0&size=10 -> status=200 duration=1ms ip=0:0:0:0:0:0:0:1
-2025-09-06 15:28:05.006 INFO  [http-nio-8080-exec-9] f.k.b.controller.AuteurController - rid=051510a2-4656-40dc-8d69-3667143eb2b8 user=rachid - GET /api/auteurs
-2025-09-06 15:28:07.446 INFO  [http-nio-8080-exec-9] f.k.b.config.RequestLoggingFilter - rid=051510a2-4656-40dc-8d69-3667143eb2b8 user=rachid - GET /api/auteurs?page=0&size=10 -> status=200 duration=2440ms ip=0:0:0:0:0:0:0:1
-2025-09-06 15:28:37.806 INFO  [http-nio-8080-exec-1] f.k.b.config.RequestLoggingFilter - rid=4c0ce7cd-5077-4bf5-809a-7943f61c2e08 user= - OPTIONS /api/livres?page=0&size=10 -> status=200 duration=0ms ip=0:0:0:0:0:0:0:1
-2025-09-06 15:28:37.817 INFO  [http-nio-8080-exec-2] f.k.b.controller.LivreController - rid=e7cccf5d-1152-4517-8f7f-b8ce5b692413 user=rachid - GET /api/livres
-2025-09-06 15:28:37.977 INFO  [http-nio-8080-exec-2] f.k.b.config.RequestLoggingFilter - rid=e7cccf5d-1152-4517-8f7f-b8ce5b692413 user=rachid - GET /api/livres?page=0&size=10 -> status=200 duration=161ms ip=0:0:0:0:0:0:0:1
-2025-09-06 15:28:41.491 INFO  [http-nio-8080-exec-3] f.k.b.config.RequestLoggingFilter - rid=c803c60d-52fc-46d8-9cc6-7ee8381b0ade user= - OPTIONS /api/auteurs?page=0&size=10 -> status=200 duration=0ms ip=0:0:0:0:0:0:0:1
-2025-09-06 15:28:41.497 INFO  [http-nio-8080-exec-4] f.k.b.controller.AuteurController - rid=029b1400-6898-4da5-8167-374195cbc1b7 user=rachid - GET /api/auteurs
-2025-09-06 15:28:41.513 INFO  [http-nio-8080-exec-4] f.k.b.config.RequestLoggingFilter - rid=029b1400-6898-4da5-8167-374195cbc1b7 user=rachid - GET /api/auteurs?page=0&size=10 -> status=200 duration=17ms ip=0:0:0:0:0:0:0:1
-2025-09-06 15:33:05.433 INFO  [http-nio-8080-exec-6] f.k.b.config.RequestLoggingFilter - rid=a5cb79b5-065e-4483-a528-7a70ab514cd7 user= - OPTIONS /api/auteurs?page=0&size=10 -> status=200 duration=1ms ip=0:0:0:0:0:0:0:1
-2025-09-06 15:33:05.439 INFO  [http-nio-8080-exec-7] f.k.b.controller.AuteurController - rid=def55095-88a6-4a3d-8571-0269324cf251 user=rachid - GET /api/auteurs
-2025-09-06 15:33:05.470 INFO  [http-nio-8080-exec-7] f.k.b.config.RequestLoggingFilter - rid=def55095-88a6-4a3d-8571-0269324cf251 user=rachid - GET /api/auteurs?page=0&size=10 -> status=200 duration=34ms ip=0:0:0:0:0:0:0:1
-2025-09-06 15:39:08.754 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - rid= user= - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m59s441ms).
-2025-09-06 15:45:00.598 INFO  [http-nio-8080-exec-10] f.k.b.controller.AuteurController - rid=500584b1-29d3-4a8a-841e-9bb5f2fc8c70 user=rachid - GET /api/auteurs
-2025-09-06 15:45:07.594 INFO  [http-nio-8080-exec-1] f.k.b.controller.LivreController - rid=72b98e8b-be01-44d7-a0ae-acefeae6116a user=rachid - GET /api/livres
-2025-09-06 15:45:07.610 WARN  [http-nio-8080-exec-10] com.zaxxer.hikari.pool.PoolBase - rid=500584b1-29d3-4a8a-841e-9bb5f2fc8c70 user=rachid - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5eac3f61 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2025-09-06 15:45:07.632 INFO  [http-nio-8080-exec-10] f.k.b.config.RequestLoggingFilter - rid=500584b1-29d3-4a8a-841e-9bb5f2fc8c70 user=rachid - GET /api/auteurs -> status=200 duration=7035ms ip=127.0.0.1
-2025-09-06 15:45:07.692 INFO  [http-nio-8080-exec-1] f.k.b.config.RequestLoggingFilter - rid=72b98e8b-be01-44d7-a0ae-acefeae6116a user=rachid - GET /api/livres -> status=200 duration=99ms ip=127.0.0.1
-2025-09-06 15:45:13.881 INFO  [http-nio-8080-exec-2] f.k.b.controller.AuteurController - rid=40d50f9a-f400-4f7c-8ac4-30d0533cd259 user=rachid - GET /api/auteurs
-2025-09-06 15:45:13.899 INFO  [http-nio-8080-exec-2] f.k.b.config.RequestLoggingFilter - rid=40d50f9a-f400-4f7c-8ac4-30d0533cd259 user=rachid - GET /api/auteurs -> status=200 duration=19ms ip=127.0.0.1
-2025-09-06 15:45:24.224 INFO  [http-nio-8080-exec-3] f.k.b.controller.LivreController - rid=3c2a44fd-5db6-4b20-8615-168a2ec50a7e user=rachid - GET /api/livres
-2025-09-06 15:45:24.313 INFO  [http-nio-8080-exec-3] f.k.b.config.RequestLoggingFilter - rid=3c2a44fd-5db6-4b20-8615-168a2ec50a7e user=rachid - GET /api/livres -> status=200 duration=89ms ip=127.0.0.1
-2025-09-06 15:45:25.424 INFO  [http-nio-8080-exec-4] f.k.b.controller.AuteurController - rid=394cfc5a-bf50-4ffc-9abc-1710f60da64d user=rachid - GET /api/auteurs
-2025-09-06 15:45:25.440 INFO  [http-nio-8080-exec-4] f.k.b.config.RequestLoggingFilter - rid=394cfc5a-bf50-4ffc-9abc-1710f60da64d user=rachid - GET /api/auteurs -> status=200 duration=16ms ip=127.0.0.1
-2025-09-06 15:45:29.801 INFO  [http-nio-8080-exec-5] f.k.b.controller.LivreController - rid=8fe79afe-7dc3-44a3-ac3f-e7b761e94da4 user=rachid - GET /api/livres
-2025-09-06 15:45:29.885 INFO  [http-nio-8080-exec-5] f.k.b.config.RequestLoggingFilter - rid=8fe79afe-7dc3-44a3-ac3f-e7b761e94da4 user=rachid - GET /api/livres -> status=200 duration=85ms ip=127.0.0.1
-2025-09-06 15:45:49.572 INFO  [http-nio-8080-exec-6] f.k.b.controller.AuteurController - rid=fa967f9f-c991-4dcb-9672-416b761f3125 user=rachid - GET /api/auteurs
-2025-09-06 15:45:49.589 INFO  [http-nio-8080-exec-6] f.k.b.config.RequestLoggingFilter - rid=fa967f9f-c991-4dcb-9672-416b761f3125 user=rachid - GET /api/auteurs -> status=200 duration=16ms ip=127.0.0.1
-2025-09-06 15:49:45.835 INFO  [http-nio-8080-exec-7] f.k.b.controller.AuteurController - rid=7a966a2d-c546-44d0-8ad1-ef18dabca193 user=rachid - GET /api/auteurs
-2025-09-06 15:49:45.912 INFO  [http-nio-8080-exec-7] f.k.b.config.RequestLoggingFilter - rid=7a966a2d-c546-44d0-8ad1-ef18dabca193 user=rachid - GET /api/auteurs -> status=200 duration=78ms ip=127.0.0.1
-2025-09-06 15:50:35.198 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - rid= user= - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56s373ms).
-2025-09-06 15:50:52.717 INFO  [http-nio-8080-exec-8] f.k.b.controller.AuteurController - rid=ef3d76b1-c9da-443c-af5a-df8e6d936456 user=rachid - GET /api/auteurs
-2025-09-06 15:50:52.881 INFO  [http-nio-8080-exec-8] f.k.b.config.RequestLoggingFilter - rid=ef3d76b1-c9da-443c-af5a-df8e6d936456 user=rachid - GET /api/auteurs -> status=200 duration=164ms ip=127.0.0.1
-2025-09-06 15:51:04.972 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - rid= user= - HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s774ms), soft-evicting connections from pool.
-2025-09-06 15:51:35.547 INFO  [http-nio-8080-exec-9] f.k.b.controller.LivreController - rid=55888f18-04d0-47a1-ba23-83363813c188 user=rachid - GET /api/livres
-2025-09-06 15:51:35.628 INFO  [http-nio-8080-exec-9] f.k.b.config.RequestLoggingFilter - rid=55888f18-04d0-47a1-ba23-83363813c188 user=rachid - GET /api/livres -> status=200 duration=82ms ip=127.0.0.1
-2025-09-06 15:51:36.529 INFO  [http-nio-8080-exec-10] f.k.b.controller.AuteurController - rid=e6eaefbf-7f52-4a98-9fa6-be25eb906132 user=rachid - GET /api/auteurs
-2025-09-06 15:51:36.546 INFO  [http-nio-8080-exec-10] f.k.b.config.RequestLoggingFilter - rid=e6eaefbf-7f52-4a98-9fa6-be25eb906132 user=rachid - GET /api/auteurs -> status=200 duration=17ms ip=127.0.0.1
-2025-09-06 15:51:45.689 INFO  [http-nio-8080-exec-1] f.k.b.controller.LivreController - rid=fc3b26f8-bea6-4dba-b885-e02281be07b8 user=rachid - GET /api/livres
-2025-09-06 15:51:45.815 INFO  [http-nio-8080-exec-1] f.k.b.config.RequestLoggingFilter - rid=fc3b26f8-bea6-4dba-b885-e02281be07b8 user=rachid - GET /api/livres -> status=200 duration=127ms ip=127.0.0.1
-2025-09-06 15:51:49.976 INFO  [http-nio-8080-exec-2] f.k.b.controller.AuteurController - rid=c5d14d72-853e-45b5-b500-2b031a0ac144 user=rachid - GET /api/auteurs
-2025-09-06 15:51:50.057 INFO  [http-nio-8080-exec-2] f.k.b.config.RequestLoggingFilter - rid=c5d14d72-853e-45b5-b500-2b031a0ac144 user=rachid - GET /api/auteurs -> status=200 duration=83ms ip=127.0.0.1
-2025-09-06 15:55:16.093 INFO  [http-nio-8080-exec-3] f.k.b.controller.LivreController - rid=f78acf42-af0b-440c-b532-6d136e01eb75 user=rachid - GET /api/livres
-2025-09-06 15:55:16.217 INFO  [http-nio-8080-exec-3] f.k.b.config.RequestLoggingFilter - rid=f78acf42-af0b-440c-b532-6d136e01eb75 user=rachid - GET /api/livres -> status=200 duration=124ms ip=127.0.0.1
-2025-09-06 15:55:25.360 INFO  [http-nio-8080-exec-4] f.k.b.controller.AuteurController - rid=dcb816d5-204b-4fb9-9483-777fb8b0a5db user=rachid - GET /api/auteurs
-2025-09-06 15:55:25.381 INFO  [http-nio-8080-exec-4] f.k.b.config.RequestLoggingFilter - rid=dcb816d5-204b-4fb9-9483-777fb8b0a5db user=rachid - GET /api/auteurs -> status=200 duration=22ms ip=127.0.0.1
-2025-09-06 15:55:26.928 INFO  [http-nio-8080-exec-5] f.k.b.controller.LivreController - rid=5ebfb20b-93d3-4be2-9ac5-c09c90fcf9f4 user=rachid - GET /api/livres
-2025-09-06 15:55:27.016 INFO  [http-nio-8080-exec-5] f.k.b.config.RequestLoggingFilter - rid=5ebfb20b-93d3-4be2-9ac5-c09c90fcf9f4 user=rachid - GET /api/livres -> status=200 duration=88ms ip=127.0.0.1
-2025-09-06 15:57:54.814 INFO  [http-nio-8080-exec-6] f.k.b.controller.AuteurController - rid=5eaf8120-ead7-4850-97b2-37c18096aef0 user=rachid - GET /api/auteurs
-2025-09-06 15:57:54.831 INFO  [http-nio-8080-exec-6] f.k.b.config.RequestLoggingFilter - rid=5eaf8120-ead7-4850-97b2-37c18096aef0 user=rachid - GET /api/auteurs -> status=200 duration=17ms ip=127.0.0.1
-2025-09-06 15:57:59.639 INFO  [http-nio-8080-exec-7] f.k.b.controller.LivreController - rid=68a00d39-2f50-45eb-8930-75b73eeb4e6a user=rachid - GET /api/livres
-2025-09-06 15:57:59.726 INFO  [http-nio-8080-exec-7] f.k.b.config.RequestLoggingFilter - rid=68a00d39-2f50-45eb-8930-75b73eeb4e6a user=rachid - GET /api/livres -> status=200 duration=87ms ip=127.0.0.1
-2025-09-06 15:58:02.787 INFO  [http-nio-8080-exec-8] f.k.b.controller.AuteurController - rid=fff0e725-14bb-4a04-aa7c-0faa40ea5d0f user=rachid - GET /api/auteurs
-2025-09-06 15:58:02.803 INFO  [http-nio-8080-exec-8] f.k.b.config.RequestLoggingFilter - rid=fff0e725-14bb-4a04-aa7c-0faa40ea5d0f user=rachid - GET /api/auteurs -> status=200 duration=16ms ip=127.0.0.1
-2025-09-06 16:00:28.542 INFO  [http-nio-8080-exec-9] f.k.b.controller.AuteurController - rid=020f089c-09f4-457d-b990-e6a3734c33d7 user=rachid - GET /api/auteurs
-2025-09-06 16:00:28.567 INFO  [http-nio-8080-exec-9] f.k.b.config.RequestLoggingFilter - rid=020f089c-09f4-457d-b990-e6a3734c33d7 user=rachid - GET /api/auteurs -> status=200 duration=26ms ip=127.0.0.1
-2025-09-06 16:00:30.467 INFO  [http-nio-8080-exec-10] f.k.b.controller.LivreController - rid=c260bcd3-0dc9-4be6-9462-4203493b56a8 user=rachid - GET /api/livres
-2025-09-06 16:00:30.583 INFO  [http-nio-8080-exec-10] f.k.b.config.RequestLoggingFilter - rid=c260bcd3-0dc9-4be6-9462-4203493b56a8 user=rachid - GET /api/livres -> status=200 duration=116ms ip=127.0.0.1
-2025-09-06 16:02:11.885 INFO  [http-nio-8080-exec-1] f.k.b.controller.LivreController - rid=636f8453-e659-4006-987c-6deec394a51b user=rachid - GET /api/livres
-2025-09-06 16:02:12.032 INFO  [http-nio-8080-exec-1] f.k.b.config.RequestLoggingFilter - rid=636f8453-e659-4006-987c-6deec394a51b user=rachid - GET /api/livres -> status=200 duration=148ms ip=127.0.0.1
-2025-09-06 16:02:13.046 INFO  [http-nio-8080-exec-2] f.k.b.controller.AuteurController - rid=d323dc3d-31fd-4053-8ba4-20770565c524 user=rachid - GET /api/auteurs
-2025-09-06 16:02:13.062 INFO  [http-nio-8080-exec-2] f.k.b.config.RequestLoggingFilter - rid=d323dc3d-31fd-4053-8ba4-20770565c524 user=rachid - GET /api/auteurs -> status=200 duration=16ms ip=127.0.0.1
-2025-09-06 16:04:03.708 INFO  [http-nio-8080-exec-3] f.k.b.controller.AuteurController - rid=13c5b144-2364-464e-a9b3-be47bc81c8ee user=rachid - GET /api/auteurs
-2025-09-06 16:04:03.723 INFO  [http-nio-8080-exec-3] f.k.b.config.RequestLoggingFilter - rid=13c5b144-2364-464e-a9b3-be47bc81c8ee user=rachid - GET /api/auteurs -> status=200 duration=16ms ip=127.0.0.1
-2025-09-06 16:04:05.224 INFO  [http-nio-8080-exec-4] f.k.b.controller.LivreController - rid=5a38784b-e969-44e0-a466-d4db135724fb user=rachid - GET /api/livres
-2025-09-06 16:04:05.310 INFO  [http-nio-8080-exec-4] f.k.b.config.RequestLoggingFilter - rid=5a38784b-e969-44e0-a466-d4db135724fb user=rachid - GET /api/livres -> status=200 duration=86ms ip=127.0.0.1
-2025-09-06 16:04:48.075 INFO  [http-nio-8080-exec-5] f.k.b.controller.AuteurController - rid=31b3926c-e690-4466-af6c-360254f9b383 user=rachid - GET /api/auteurs
-2025-09-06 16:04:48.097 INFO  [http-nio-8080-exec-5] f.k.b.config.RequestLoggingFilter - rid=31b3926c-e690-4466-af6c-360254f9b383 user=rachid - GET /api/auteurs -> status=200 duration=23ms ip=127.0.0.1
-2025-09-06 16:07:58.592 INFO  [http-nio-8080-exec-6] f.k.b.controller.AuteurController - rid=83f1c059-8b65-4c2c-a6e7-26c2ac27a84e user=rachid - GET /api/auteurs
-2025-09-06 16:07:58.634 INFO  [http-nio-8080-exec-6] f.k.b.config.RequestLoggingFilter - rid=83f1c059-8b65-4c2c-a6e7-26c2ac27a84e user=rachid - GET /api/auteurs -> status=200 duration=42ms ip=127.0.0.1
-2025-09-06 16:11:41.980 INFO  [http-nio-8080-exec-7] f.k.b.controller.AuteurController - rid=f2e02c80-4bea-4750-ad28-eb1ed9aae72c user=rachid - GET /api/auteurs
-2025-09-06 16:11:41.994 INFO  [http-nio-8080-exec-7] f.k.b.config.RequestLoggingFilter - rid=f2e02c80-4bea-4750-ad28-eb1ed9aae72c user=rachid - GET /api/auteurs -> status=200 duration=15ms ip=127.0.0.1
-2025-09-06 16:11:45.006 INFO  [http-nio-8080-exec-8] f.k.b.controller.LivreController - rid=4bbb64a7-8bb9-4847-97f1-ad2275518ca6 user=rachid - GET /api/livres
-2025-09-06 16:11:45.092 INFO  [http-nio-8080-exec-8] f.k.b.config.RequestLoggingFilter - rid=4bbb64a7-8bb9-4847-97f1-ad2275518ca6 user=rachid - GET /api/livres -> status=200 duration=87ms ip=127.0.0.1
-2025-09-06 16:11:50.801 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - rid= user= - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m45s793ms).
-2025-09-06 16:11:53.564 INFO  [http-nio-8080-exec-9] f.k.b.controller.LivreController - rid=5ecbc570-1c67-4373-a6c1-adf85165656a user=rachid - GET /api/livres
-2025-09-06 16:11:53.726 INFO  [http-nio-8080-exec-9] f.k.b.config.RequestLoggingFilter - rid=5ecbc570-1c67-4373-a6c1-adf85165656a user=rachid - GET /api/livres -> status=200 duration=163ms ip=127.0.0.1
-2025-09-06 16:11:54.545 INFO  [http-nio-8080-exec-10] f.k.b.controller.AuteurController - rid=8dfaa504-27fd-419f-bbf1-7befffdcd3ac user=rachid - GET /api/auteurs
-2025-09-06 16:11:54.821 INFO  [http-nio-8080-exec-10] f.k.b.config.RequestLoggingFilter - rid=8dfaa504-27fd-419f-bbf1-7befffdcd3ac user=rachid - GET /api/auteurs -> status=200 duration=276ms ip=127.0.0.1
-2025-09-06 16:12:01.882 INFO  [http-nio-8080-exec-1] f.k.b.controller.LivreController - rid=382ef5c9-baf0-4f74-956d-f89d2cb3e40a user=rachid - GET /api/livres
-2025-09-06 16:12:01.960 INFO  [http-nio-8080-exec-1] f.k.b.config.RequestLoggingFilter - rid=382ef5c9-baf0-4f74-956d-f89d2cb3e40a user=rachid - GET /api/livres -> status=200 duration=78ms ip=127.0.0.1
-2025-09-06 16:16:19.303 INFO  [http-nio-8080-exec-2] f.k.b.controller.AuteurController - rid=b0fae94c-b731-42b4-b706-40317b87d937 user=rachid - GET /api/auteurs
-2025-09-06 16:16:19.330 INFO  [http-nio-8080-exec-2] f.k.b.config.RequestLoggingFilter - rid=b0fae94c-b731-42b4-b706-40317b87d937 user=rachid - GET /api/auteurs -> status=200 duration=27ms ip=127.0.0.1
-2025-09-06 16:16:21.283 INFO  [http-nio-8080-exec-3] f.k.b.controller.LivreController - rid=ce17e3c8-e1ff-42da-8db5-988d02659487 user=rachid - GET /api/livres
-2025-09-06 16:16:21.372 INFO  [http-nio-8080-exec-3] f.k.b.config.RequestLoggingFilter - rid=ce17e3c8-e1ff-42da-8db5-988d02659487 user=rachid - GET /api/livres -> status=200 duration=90ms ip=127.0.0.1
-2025-09-06 16:23:04.380 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - rid= user= - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-09-06 16:23:04.383 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - rid= user= - HikariPool-1 - Shutdown initiated...
-2025-09-06 16:23:05.157 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - rid= user= - HikariPool-1 - Shutdown completed.
+2025-09-09 00:34:49.122 INFO  [background-preinit] o.h.validator.internal.util.Version - rid= user= - HV000001: Hibernate Validator 8.0.1.Final
+2025-09-09 00:34:49.161 INFO  [main] fr.keltou.biblio.BiblioApplication - rid= user= - Starting BiblioApplication using Java 21.0.8 with PID 54730 (/Users/rachid/Travail/Projets/Workspace/Vibe-coding/Bibliotheque/apirest-Lovable-Codex/apirest/target/classes started by rachid in /Users/rachid/Travail/Projets/Workspace/Vibe-coding/Bibliotheque/apirest-Lovable-Codex/apirest)
+2025-09-09 00:34:49.162 INFO  [main] fr.keltou.biblio.BiblioApplication - rid= user= - The following 1 profile is active: "dev"
+2025-09-09 00:34:50.024 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - rid= user= - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-09 00:34:50.082 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - rid= user= - Finished Spring Data repository scanning in 50 ms. Found 5 JPA repository interfaces.
+2025-09-09 00:34:50.691 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - rid= user= - Tomcat initialized with port 8080 (http)
+2025-09-09 00:34:50.708 INFO  [main] o.a.coyote.http11.Http11NioProtocol - rid= user= - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-09 00:34:50.711 INFO  [main] o.a.catalina.core.StandardService - rid= user= - Starting service [Tomcat]
+2025-09-09 00:34:50.711 INFO  [main] o.a.catalina.core.StandardEngine - rid= user= - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-09-09 00:34:50.765 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - rid= user= - Initializing Spring embedded WebApplicationContext
+2025-09-09 00:34:50.766 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - rid= user= - Root WebApplicationContext: initialization completed in 1560 ms
+2025-09-09 00:34:51.048 INFO  [main] o.h.jpa.internal.util.LogHelper - rid= user= - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-09 00:34:51.091 INFO  [main] org.hibernate.Version - rid= user= - HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-09-09 00:34:51.119 INFO  [main] o.h.c.i.RegionFactoryInitiator - rid= user= - HHH000026: Second-level cache disabled
+2025-09-09 00:34:51.370 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - rid= user= - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-09 00:34:51.395 INFO  [main] com.zaxxer.hikari.HikariDataSource - rid= user= - HikariPool-1 - Starting...
+2025-09-09 00:34:51.787 INFO  [main] com.zaxxer.hikari.pool.HikariPool - rid= user= - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fa6fb7f
+2025-09-09 00:34:51.790 INFO  [main] com.zaxxer.hikari.HikariDataSource - rid= user= - HikariPool-1 - Start completed.
+2025-09-09 00:34:52.736 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - rid= user= - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-09 00:34:52.739 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - rid= user= - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-09 00:34:52.983 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - rid= user= - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-09 00:34:53.561 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - rid= user= - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-09 00:34:53.606 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - rid= user= - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-09-09 00:34:53.989 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - rid= user= - Exposing 5 endpoints beneath base path '/actuator'
+2025-09-09 00:34:54.476 INFO  [main] o.a.coyote.http11.Http11NioProtocol - rid= user= - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-09 00:34:54.491 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - rid= user= - Tomcat started on port 8080 (http) with context path '/'
+2025-09-09 00:34:54.506 INFO  [main] fr.keltou.biblio.BiblioApplication - rid= user= - Started BiblioApplication in 5.812 seconds (process running for 6.114)
+2025-09-09 00:36:03.170 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - rid= user= - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-09 00:36:03.171 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - rid= user= - Initializing Servlet 'dispatcherServlet'
+2025-09-09 00:36:03.175 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - rid= user= - Completed initialization in 3 ms
+2025-09-09 00:36:03.267 INFO  [http-nio-8080-exec-2] f.k.b.c.MaisonEditionController - rid=05ec1e1c-8dbc-4f5d-86c7-609199b22280 user=rachid - GET /api/maisons-edition
+2025-09-09 00:36:03.484 INFO  [http-nio-8080-exec-2] f.k.b.config.RequestLoggingFilter - rid=05ec1e1c-8dbc-4f5d-86c7-609199b22280 user=rachid - GET /api/maisons-edition -> status=200 duration=232ms ip=0:0:0:0:0:0:0:1
+2025-09-09 00:36:11.594 INFO  [http-nio-8080-exec-4] f.k.b.c.UtilisateurController - rid=8d27a190-05ec-4927-b559-1b7574566a0e user=rachid - POST /api/utilisateurs/auth pour rach
+2025-09-09 00:36:11.632 INFO  [http-nio-8080-exec-4] f.k.b.config.RequestLoggingFilter - rid=8d27a190-05ec-4927-b559-1b7574566a0e user=rachid - POST /api/utilisateurs/auth -> status=200 duration=63ms ip=0:0:0:0:0:0:0:1
+2025-09-09 00:36:14.635 INFO  [http-nio-8080-exec-6] f.k.b.controller.AuteurController - rid=5b344ba6-516d-48a5-99a0-31f8b7b2cbfa user=rachid - GET /api/auteurs
+2025-09-09 00:36:14.691 INFO  [http-nio-8080-exec-6] f.k.b.config.RequestLoggingFilter - rid=5b344ba6-516d-48a5-99a0-31f8b7b2cbfa user=rachid - GET /api/auteurs -> status=200 duration=57ms ip=0:0:0:0:0:0:0:1
+2025-09-09 00:52:42.736 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - rid= user= - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-09 00:52:42.740 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - rid= user= - HikariPool-1 - Shutdown initiated...
+2025-09-09 00:52:43.504 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - rid= user= - HikariPool-1 - Shutdown completed.
+2025-09-09 01:09:30.073 INFO  [background-preinit] o.h.validator.internal.util.Version - rid= user= - HV000001: Hibernate Validator 8.0.1.Final
+2025-09-09 01:09:30.109 INFO  [main] fr.keltou.biblio.BiblioApplication - rid= user= - Starting BiblioApplication using Java 21.0.8 with PID 56009 (/Users/rachid/Travail/Projets/Workspace/Vibe-coding/Bibliotheque/apirest-Lovable-Codex/apirest/target/classes started by rachid in /Users/rachid/Travail/Projets/Workspace/Vibe-coding/Bibliotheque/apirest-Lovable-Codex/apirest)
+2025-09-09 01:09:30.110 INFO  [main] fr.keltou.biblio.BiblioApplication - rid= user= - The following 1 profile is active: "dev"
+2025-09-09 01:09:31.303 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - rid= user= - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-09 01:09:31.372 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - rid= user= - Finished Spring Data repository scanning in 59 ms. Found 5 JPA repository interfaces.
+2025-09-09 01:09:32.244 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - rid= user= - Tomcat initialized with port 8080 (http)
+2025-09-09 01:09:32.257 INFO  [main] o.a.coyote.http11.Http11NioProtocol - rid= user= - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-09 01:09:32.262 INFO  [main] o.a.catalina.core.StandardService - rid= user= - Starting service [Tomcat]
+2025-09-09 01:09:32.262 INFO  [main] o.a.catalina.core.StandardEngine - rid= user= - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-09-09 01:09:32.328 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - rid= user= - Initializing Spring embedded WebApplicationContext
+2025-09-09 01:09:32.328 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - rid= user= - Root WebApplicationContext: initialization completed in 2179 ms
+2025-09-09 01:09:32.671 INFO  [main] o.h.jpa.internal.util.LogHelper - rid= user= - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-09 01:09:32.753 INFO  [main] org.hibernate.Version - rid= user= - HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-09-09 01:09:32.802 INFO  [main] o.h.c.i.RegionFactoryInitiator - rid= user= - HHH000026: Second-level cache disabled
+2025-09-09 01:09:33.195 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - rid= user= - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-09 01:09:33.225 INFO  [main] com.zaxxer.hikari.HikariDataSource - rid= user= - HikariPool-1 - Starting...
+2025-09-09 01:09:33.677 INFO  [main] com.zaxxer.hikari.pool.HikariPool - rid= user= - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c8d8b60
+2025-09-09 01:09:33.680 INFO  [main] com.zaxxer.hikari.HikariDataSource - rid= user= - HikariPool-1 - Start completed.
+2025-09-09 01:09:34.935 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - rid= user= - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-09 01:09:34.940 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - rid= user= - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-09 01:09:35.299 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - rid= user= - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-09 01:09:36.021 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - rid= user= - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-09 01:09:36.071 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - rid= user= - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-09-09 01:09:36.508 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - rid= user= - Exposing 5 endpoints beneath base path '/actuator'
+2025-09-09 01:09:37.078 INFO  [main] o.a.coyote.http11.Http11NioProtocol - rid= user= - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-09 01:09:37.093 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - rid= user= - Tomcat started on port 8080 (http) with context path '/'
+2025-09-09 01:09:37.108 INFO  [main] fr.keltou.biblio.BiblioApplication - rid= user= - Started BiblioApplication in 7.621 seconds (process running for 7.982)
+2025-09-09 01:11:28.401 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - rid= user= - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-09 01:11:28.405 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - rid= user= - HikariPool-1 - Shutdown initiated...
+2025-09-09 01:11:28.457 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - rid= user= - HikariPool-1 - Shutdown completed.

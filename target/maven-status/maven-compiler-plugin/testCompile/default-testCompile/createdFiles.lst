@@ -1,5 +1,4 @@
 fr/keltou/biblio/service/AuteurServiceTest.class
-fr/keltou/biblio/controller/AuthControllerTest.class
 fr/keltou/biblio/service/LivreServiceTest.class
 fr/keltou/biblio/controller/LivreControllerTest.class
 fr/keltou/biblio/controller/UtilisateurControllerTest.class

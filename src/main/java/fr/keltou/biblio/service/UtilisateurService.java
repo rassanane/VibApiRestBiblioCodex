@@ -10,5 +10,5 @@ public interface UtilisateurService {
     Utilisateur getById(Long id);
     List<Utilisateur> getAll();
     boolean authenticate(String identifiant, String motPasse);
+    Utilisateur findByCredentials(String identifiant, String motPasse);
 }
-

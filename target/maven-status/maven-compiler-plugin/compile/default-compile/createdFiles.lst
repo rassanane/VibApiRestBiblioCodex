@@ -1,5 +1,6 @@
 fr/keltou/biblio/repository/LivreRepository.class
 fr/keltou/biblio/dto/MaisonEditionDto.class
+fr/keltou/biblio/config/RequestLoggingFilter.class
 fr/keltou/biblio/service/impl/LivreServiceImpl.class
 fr/keltou/biblio/exception/ResourceNotFoundException.class
 fr/keltou/biblio/utils/DateUtils.class
@@ -15,7 +16,7 @@ fr/keltou/biblio/service/impl/UtilisateurServiceImpl.class
 fr/keltou/biblio/service/impl/ContactServiceImpl.class
 fr/keltou/biblio/model/Auteur.class
 fr/keltou/biblio/model/MaisonEdition.class
-fr/keltou/biblio/controller/AuthController.class
+fr/keltou/biblio/dto/LivreCardDto.class
 fr/keltou/biblio/model/Utilisateur.class
 fr/keltou/biblio/service/MaisonEditionService.class
 fr/keltou/biblio/repository/ContactRepository.class
@@ -35,3 +36,4 @@ fr/keltou/biblio/utils/StringUtils.class
 fr/keltou/biblio/repository/UtilisateurRepository.class
 fr/keltou/biblio/controller/MaisonEditionController.class
 fr/keltou/biblio/controller/UtilisateurController.class
+fr/keltou/biblio/config/LogDirInitializer.class

@@ -4,12 +4,12 @@
 /Users/rachid/Travail/Projets/Workspace/Vibe-coding/Bibliotheque/apirest-Lovable-Codex/apirest/src/main/java/fr/keltou/biblio/config/RequestLoggingFilter.java
 /Users/rachid/Travail/Projets/Workspace/Vibe-coding/Bibliotheque/apirest-Lovable-Codex/apirest/src/main/java/fr/keltou/biblio/config/SecurityConfig.java
 /Users/rachid/Travail/Projets/Workspace/Vibe-coding/Bibliotheque/apirest-Lovable-Codex/apirest/src/main/java/fr/keltou/biblio/controller/AuteurController.java
-/Users/rachid/Travail/Projets/Workspace/Vibe-coding/Bibliotheque/apirest-Lovable-Codex/apirest/src/main/java/fr/keltou/biblio/controller/AuthController.java
 /Users/rachid/Travail/Projets/Workspace/Vibe-coding/Bibliotheque/apirest-Lovable-Codex/apirest/src/main/java/fr/keltou/biblio/controller/ContactController.java
 /Users/rachid/Travail/Projets/Workspace/Vibe-coding/Bibliotheque/apirest-Lovable-Codex/apirest/src/main/java/fr/keltou/biblio/controller/LivreController.java
 /Users/rachid/Travail/Projets/Workspace/Vibe-coding/Bibliotheque/apirest-Lovable-Codex/apirest/src/main/java/fr/keltou/biblio/controller/MaisonEditionController.java
 /Users/rachid/Travail/Projets/Workspace/Vibe-coding/Bibliotheque/apirest-Lovable-Codex/apirest/src/main/java/fr/keltou/biblio/controller/UtilisateurController.java
 /Users/rachid/Travail/Projets/Workspace/Vibe-coding/Bibliotheque/apirest-Lovable-Codex/apirest/src/main/java/fr/keltou/biblio/dto/AuteurDto.java
+/Users/rachid/Travail/Projets/Workspace/Vibe-coding/Bibliotheque/apirest-Lovable-Codex/apirest/src/main/java/fr/keltou/biblio/dto/LivreCardDto.java
 /Users/rachid/Travail/Projets/Workspace/Vibe-coding/Bibliotheque/apirest-Lovable-Codex/apirest/src/main/java/fr/keltou/biblio/dto/LivreDto.java
 /Users/rachid/Travail/Projets/Workspace/Vibe-coding/Bibliotheque/apirest-Lovable-Codex/apirest/src/main/java/fr/keltou/biblio/dto/MaisonEditionDto.java
 /Users/rachid/Travail/Projets/Workspace/Vibe-coding/Bibliotheque/apirest-Lovable-Codex/apirest/src/main/java/fr/keltou/biblio/exception/BadRequestException.java

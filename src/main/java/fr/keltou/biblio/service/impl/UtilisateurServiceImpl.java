@@ -52,10 +52,21 @@ public class UtilisateurServiceImpl implements UtilisateurService {
 
     @Override public boolean authenticate(String identifiant, String motPasse) {
         try {
-            return repository.findByIdentifiant(identifiant)
+            boolean found = repository.findByIdentifiant(identifiant).isPresent();
+            boolean ok = repository.findByIdentifiant(identifiant)
                     .map(u -> u.getMotPasse() != null && u.getMotPasse().equals(motPasse))
                     .orElse(false);
+            log.info("Authentification utilisateur identifiant='{}' found={} ok={}", identifiant, found, ok);
+            return ok;
         } catch (Exception e) { log.error("Erreur authentification pour {}", identifiant, e); throw e; }
     }
-}
 
+    @Override
+    public Utilisateur findByCredentials(String identifiant, String motPasse) {
+        try {
+            return repository.findByIdentifiant(identifiant)
+                    .filter(u -> u.getMotPasse() != null && u.getMotPasse().equals(motPasse))
+                    .orElse(null);
+        } catch (Exception e) { log.error("Erreur recherche utilisateur par credentials pour {}", identifiant, e); throw e; }
+    }
+}

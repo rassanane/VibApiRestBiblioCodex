@@ -14,3 +14,69 @@ ev`
 
 
 
+!!!!!!!!!!!!!
+i desactivate all test origis CORS for the moment
+
+
+
+!!!!!!!!!!!!!
+Deploy in server to test :
+
+clean package -DskipTests spring-boot:repackage
+
+java install :
+sudo apt install openjdk-21-jre-headless
+sudo chmod 777 /var/www/html/projects/java
+java -jar biblio-0.0.1-SNAPSHOT.jar
+
+!!!!!
+i have error where i started the server, logging not correcttly configured :
+i created logs directoryin /var/www/html/projects/java/biblio 
+and i gave all rights : sudo chmod 777 logs/
+
+dont forget to add rule to open port 8080
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+deploy with script in an environment :
+Create a systemd service file
+
+sudo nano /etc/systemd/system/biblio.service :
+
+
+[Unit]
+Description=My app test biblio
+After=network.target
+
+[Service]
+User=rachid
+WorkingDirectory=/var/www/html/projects/java/biblio
+ExecStart=/usr/bin/java -jar /var/www/html/projects/java/biblio/biblio-0.0.1-SNAPSHOT.jar --spring.profiles.active=dev
+SuccessExitStatus=143
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+sudo systemctl daemon-reload
+sudo systemctl enable biblio
+sudo systemctl start biblio
+
+status :
+systemctl status biblio
+
+logs :
+journalctl -u biblio -f
+
+
+
+
+
+
+
+
+

@@ -11,7 +11,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/maisons-edition")
-@CrossOrigin(origins = "http://localhost:4200", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE, RequestMethod.OPTIONS})
 public class MaisonEditionController {
     private static final Logger log = LoggerFactory.getLogger(MaisonEditionController.class);
     private final MaisonEditionService service;
