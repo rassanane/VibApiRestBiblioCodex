@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /*
-Mon application de test 13/10/2025 -7
+Mon application de test - modif 1
 */
 @SpringBootApplication
 public class BiblioApplication {
