@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /*
-Mon application de test - modif 1
+Mon application de test - modif 2
 */
 @SpringBootApplication
 public class BiblioApplication {
