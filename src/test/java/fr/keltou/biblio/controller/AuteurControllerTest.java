@@ -62,7 +62,7 @@ class AuteurControllerTest {
             .andExpect(status().isBadRequest());
     }
 
-    /*@Test
+    @Test
     void should_fail_intentionally() throws Exception {
         // Prépare un retour OK côté service pour que l'endpoint réponde 200
         Mockito.when(service.getAll()).thenReturn(List.of(new Auteur("A","B")));
@@ -70,6 +70,6 @@ class AuteurControllerTest {
         // On attend 418 (I'm a teapot) -> le test va forcément échouer (la route renverra 200)
         mockMvc.perform(get("/api/auteurs"))
                .andExpect(status().isIAmATeapot());
-    }*/
+    }
 
 }
