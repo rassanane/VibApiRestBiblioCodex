@@ -62,6 +62,7 @@ class AuteurControllerTest {
             .andExpect(status().isBadRequest());
     }
 
+    /*
     @Test
     void should_fail_intentionally() throws Exception {
         // Prépare un retour OK côté service pour que l'endpoint réponde 200 
@@ -71,5 +72,6 @@ class AuteurControllerTest {
         mockMvc.perform(get("/api/auteurs"))
                .andExpect(status().isIAmATeapot());
     }
-
+    */
+    
 }

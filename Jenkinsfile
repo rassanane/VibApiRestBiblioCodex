@@ -22,9 +22,9 @@ pipeline {
       mail to: 'rassanane@gmail.com',
            subject: "[${currentBuild.currentResult}] ${env.JOB_NAME} #${env.BUILD_NUMBER}",
            body: """Résultat: ${currentBuild.currentResult}
-Job: ${env.JOB_NAME}
-Build: #${env.BUILD_NUMBER}
-URL: ${env.BUILD_URL}"""
+            Job: ${env.JOB_NAME}
+            Build: #${env.BUILD_NUMBER}
+            URL: ${env.BUILD_URL}"""
     }
   }
 }
