@@ -1,0 +1,42 @@
+name: trivy-scan
+
+on:
+  push:          # Déclenche le scan à chaque push
+  pull_request:  # ... et sur chaque PR
+
+permissions:
+  contents: read
+  security-events: write  # Nécessaire pour uploader les rapports SARIF dans Security
+
+jobs:
+  trivy-fs:
+    name: Trivy - Code/Secrets/Misconfig
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1) Récupère le code de la branche/PR
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2) Lance Trivy sur le système de fichiers (repo)
+      #    - scanners: vuln (dépendances), secret (fuites), misconfig (mauvaises config)
+      #    - ignore-unfixed: réduit le bruit (ignore CVE sans correctif)
+      #    - severity: filtre sur HIGH/CRITICAL
+      #    - exit-code: "1" => échoue le job si findings HIGH/CRITICAL
+      #    - format: sarif => pour pousser dans l’onglet Security
+      - name: Trivy FS scan
+        uses: aquasecurity/trivy-action@0.20.0
+        with:
+          scan-type: fs
+          scanners: vuln,secret,misconfig
+          ignore-unfixed: true
+          severity: HIGH,CRITICAL
+          exit-code: "1"
+          format: sarif
+          output: trivy-fs.sarif
+
+      # 3) Upload du rapport SARIF pour visualisation dans l’onglet Security > Code scanning alerts
+      - name: Upload SARIF to GitHub Security
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: trivy-fs.sarif
